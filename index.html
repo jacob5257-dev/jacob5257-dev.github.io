@@ -4,80 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jacob Li</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #fff;
-      color: #000;
-      text-align: center;
-    }
-
-    h1 {
-      margin-top: 20px;
-      font-size: 24px;
-    }
-
-    .icons {
-      margin: 15px 0;
-    }
-
-    .icons i {
-      font-size: 22px;
-      margin: 0 8px;
-      cursor: pointer;
-      transition: transform 0.2s ease;
-    }
-
-    .icons i:hover {
-      transform: scale(1.2);
-    }
-
-    p {
-      font-weight: bold;
-      margin: 20px 0;
-    }
-
-    .btn {
-      display: block;
-      margin: 15px auto;
-      width: 80%;
-      max-width: 400px;
-      background: black;
-      color: white;
-      border: none;
-      padding: 15px;
-      font-size: 16px;
-      border-radius: 999px;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-
-    .btn:hover {
-      background: #333;
-    }
-
-    .section-title {
-      font-weight: bold;
-      margin-top: 40px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Jacob Li</h1>
+  <header class="hero">
+    <h1 class="name">Jacob Li</h1>
+    <p class="tagline">High School Student | Developer and Designer</p>
+    <div class="social-links">
+      <a href="https://github.com/jacob5257-dev" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/jacobli26" target="_blank">LinkedIn</a>
+      <button onclick="contactMe()">Contact Me</button>
+    </div>
+  </header>
 
-    <p>I'm a high school student that has a passion for programming and debate.</p>
+  <main>
+    <section class="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>SEFCOM Research Project</h3>
+          <p>Research project I conducted at Arizona State University regarding consumer response to a data breach.</p>
+          <a href="https://jacob5257.com/sefcom.pdf">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3>2024 Hackathon</h3>
+          <p>Game I made for a hackathon run by my school district.</p>
+          <a href="https://github.com/ly-nxs/Hackathon">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3>TSTDC Website</h3>
+          <p>I manage my speech and debate team's website.</p>
+          <a href="https://tstdc.com">View Project</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <button class="btn" onclick="window.location.href='mailto:jacob@jacob5257.com'">Contact Me</button>
-    <button class="btn" onclick="window.location.href='https://www.linkedin.com/in/jacobli26/'">LinkedIn Profile</button>
-    <button class="btn" onclick="window.location.href='https://github.com/jacob5257-dev'">GitHub Projects</button>
+  <footer>
+    <p>© <span id="year"></span> Jacob Li. All rights reserved.</p>
+  </footer>
 
-    <div class="section-title">Past Projects</div>
-
-    <button class="btn" onclick="window.location.href='https://github.com/ly-nxs/Hackathon'">Hackathon Game</button>
-    <button class="btn" onclick="window.location.href='https://jacob5257.com/sefcom.pdf'">Research Project</button>
-  
+  <script src="script.js"></script>
 </body>
 </html>
