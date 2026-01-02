@@ -1,0 +1,9 @@
+{
+  "subject": "acct:jacob@jacob5257.com",
+  "links": [
+    {
+      "rel": "http://openid.net/specs/connect/1.0/issuer",
+      "href": "https://auth.jacob5257.com/application/o/tailscale/"
+    }
+  ]
+}
